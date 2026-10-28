@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fbff">
+  <meta name="description"
+    content="Portfolio cá nhân của Nguyễn Lưu Quỳnh Nghi, sinh viên ngành Khoa học dữ liệu tại UTH.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quỳnh Nghi — Data Science Student">
+  <meta property="og:description" content="Cùng khám phá hành trình học tập, kỹ năng và những dự án của Quỳnh Nghi.">
+  <meta property="og:image" content="assets/images/og-cover.jpg">
+  <title>Quỳnh Nghi — Data Science Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Bỏ qua đến nội dung chính</a>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a class="brand" href="#home" aria-label="Quỳnh Nghi, trang chủ">Quỳnh Nghi<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link is-active" href="#home" data-i18n="nav.home">Trang chủ</a>
+        <a class="nav-link" href="#about" data-i18n="nav.about">Giới thiệu</a>
+        <a class="nav-link" href="#skills" data-i18n="nav.skills">Kỹ năng</a>
+        <a class="nav-link" href="#projects" data-i18n="nav.projects">Dự án</a>
+        <a class="nav-link" href="#education" data-i18n="nav.education">Học vấn</a>
+        <a class="nav-link" href="#contact" data-i18n="nav.contact">Liên hệ</a>
+        <button class="language-toggle" type="button" aria-label="Switch language">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.hello">Xin chào, rất vui được gặp
+              bạn!</span></p>
+          <h1 id="hero-title"><span data-i18n="hero.titlePrefix">Hi, mình là</span><br><span
+              class="text-gradient">Nguyễn Lưu<br class="mobile-break"> Quỳnh Nghi</span></h1>
+          <p class="hero-role" data-i18n="hero.role">Sinh viên Khoa học dữ liệu <span aria-hidden="true">·</span> Yêu
+            thích AI &amp; công nghệ</p>
+          <p class="hero-description" data-i18n="hero.description">Mình yêu thích lập trình, khám phá dữ liệu và tìm
+            hiểu cách công nghệ có thể giải quyết những vấn đề thực tế.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"><span data-i18n="hero.projects">Khám phá dự án</span><span
+                aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact" data-i18n="hero.contact">Liên hệ với mình</a>
+          </div>
+          <p class="hero-note"><span data-i18n="hero.based">Đang học tập tại</span> <strong>UTH</strong> <span
+              aria-hidden="true">·</span> <span data-i18n="hero.location">TP. Hồ Chí Minh, Việt Nam</span></p>
+        </div>
+
+        <div class="hero-art reveal" aria-label="Minh họa chủ đề khoa học dữ liệu" data-i18n-aria="hero.artAlt">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-spark spark-one"></div>
+          <div class="art-spark spark-two"></div>
+          <div class="art-spark spark-three"></div>
+          <div class="avatar-illustration">
+            <img src="asset/imgs/1793179706508_2084029886408713019_7591099696146556041_ae1eaaf0f0cbbf82e9af3ba093686b42.jpg" alt="Nguyễn Lưu Quỳnh Nghi" class="avatar-photo" width="240" height="310">
+          </div>
+          <div class="float-card float-python"><span class="mini-icon code-icon">&lt;/&gt;</span><span>Python</span>
+          </div>
+          <div class="float-card float-data"><span class="mini-icon chart-icon"><i></i><i></i><i></i></span><span>Data
+              Science</span></div>
+          <div class="float-card float-ai"><span class="mini-icon ai-icon">AI</span><span>AI / ML</span></div>
+          <div class="art-caption"><span class="caption-line"></span><span data-i18n="hero.caption">Tò mò hôm nay, tạo
+              nên ngày mai.</span></div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about"><span data-i18n="hero.scroll">Cuộn để khám phá</span><span
+          aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">MỘT CHÚT VỀ MÌNH</p>
+          <h2 id="about-title" data-i18n="about.title">Mình tin vào sức mạnh của sự tò mò.</h2>
+          <p data-i18n="about.intro">Mỗi ngày là một cơ hội để học thêm điều mới và biến ý tưởng thành điều có ích.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-portrait" role="img" aria-label="Ảnh chân dung Nguyễn Lưu Quỳnh Nghi"
+              data-i18n-aria="about.photoAlt">
+              <img src="asset/imgs/1793179706508_2084029886408713019_7591099696146556041_ae1eaaf0f0cbbf82e9af3ba093686b42.jpg" alt="Nguyễn Lưu Quỳnh Nghi" class="about-photo-img" width="370" height="405">
+            </div>
+            <div class="about-sticker"><span class="sticker-star" aria-hidden="true">✳</span><span
+                data-i18n="about.sticker">Đang học<br>mỗi ngày</span></div>
+          </div>
+          <div class="about-copy reveal">
+            <p data-i18n="about.bio">Mình là Nguyễn Lưu Quỳnh Nghi, sinh viên năm ba ngành Khoa học dữ liệu tại Trường
+              Đại học Giao thông vận tải Thành phố Hồ Chí Minh. Mình yêu thích lập trình, khám phá dữ liệu và tìm hiểu
+              cách công nghệ có thể giải quyết những vấn đề thực tế. Mình luôn mong muốn học hỏi, phát triển kỹ năng và
+              tham gia những dự án thú vị.</p>
+            <p class="quote" data-i18n="about.quote">“Learning, creating, and growing — one step at a time.”</p>
+            <div class="info-grid">
+              <article class="info-card"><span class="info-icon" aria-hidden="true">✳</span>
+                <div><strong>Data Analyst</strong><span data-i18n="Lĩnh Vực">Lĩnh vực</span></div>
+              </article>
+              <article class="info-card"><span class="info-icon" aria-hidden="true">⌂</span>
+                <div><strong>Ho Chi Minh</strong><span data-i18n="Thành Phố">Thành Phố</span></div>
+              </article>
+              <article class="info-card"><span class="info-icon" aria-hidden="true">03</span>
+                <div><strong data-i18n="Data Modeling">Data Modeling</strong><span data-i18n="skill">Kỹ Năng</span>
+                </div>
+              </article>
+              <article class="info-card"><span class="info-icon" aria-hidden="true">◇</span>
+                <div><strong>Data Science</strong><span data-i18n="about.major">Chuyên ngành</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="skills.eyebrow">BỘ CÔNG CỤ CỦA MÌNH</p>
+          <h2 id="skills-title" data-i18n="skills.title">Những công nghệ mình sử dụng</h2>
+          <p data-i18n="skills.intro">Những nền tảng mình đang thực hành và tiếp tục trau dồi.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card skill-card-featured reveal">
+            <div class="skill-card-top"><span class="skill-symbol symbol-blue" aria-hidden="true">⌘</span><span
+                class="card-index">01</span></div>
+            <h3 data-i18n="skills.programming">Ngôn ngữ lập trình</h3>
+            <p data-i18n="skills.programmingDesc">Viết chương trình, giải quyết bài toán và thử nghiệm ý tưởng.</p>
+            <ul class="tech-list">
+              <li><span class="tech-mark mark-python">Py</span>Python</li>
+              <li><span class="tech-mark mark-cpp">C++</span>C++</li>
+              <li><span class="tech-mark mark-js">JS</span>JavaScript</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-symbol symbol-lilac" aria-hidden="true">▤</span><span
+                class="card-index">02</span></div>
+            <h3 data-i18n="skills.database">Cơ sở dữ liệu</h3>
+            <p data-i18n="skills.databaseDesc">Làm quen với việc lưu trữ và tổ chức dữ liệu.</p>
+            <ul class="tech-list">
+              <li><span class="tech-mark mark-mysql">My</span>MySQL</li>
+              <li><span class="tech-mark mark-mongo">M</span>MongoDB</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-symbol symbol-mint" aria-hidden="true">⌘</span><span
+                class="card-index">03</span></div>
+            <h3 data-i18n="skills.web">Phát triển web</h3>
+            <p data-i18n="skills.webDesc">Xây dựng trải nghiệm web thân thiện với HTML, CSS và JavaScript.</p>
+            <ul class="tech-list">
+              <li><span class="tech-mark mark-html">5</span>HTML5</li>
+              <li><span class="tech-mark mark-css">3</span>CSS3</li>
+              <li><span class="tech-mark mark-js">JS</span>JavaScript</li>
+            </ul>
+          </article>
+        </div>
+        <p class="skills-note reveal"><span aria-hidden="true">✳</span><span data-i18n="skills.note">Đây là những công
+            nghệ mình đang học và thực hành — không phải thang đo trình độ.</span></p>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading section-heading-row reveal">
+          <div>
+            <p class="eyebrow" data-i18n="projects.eyebrow">DỰ ÁN NỔI BẬT</p>
+            <h2 id="projects-title" data-i18n="projects.title">Một vài dự án của mình</h2>
+          </div>
+          <p data-i18n="projects.intro">Những ý tưởng nhỏ trên hành trình khám phá công nghệ.</p>
+        </div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="container education-container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="education.eyebrow">HÀNH TRÌNH HỌC TẬP</p>
+          <h2 id="education-title" data-i18n="education.title">Từng bước một, mình đang tiến về phía trước.</h2>
+        </div>
+        <div class="timeline reveal">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="education-card">
+            <div class="education-card-heading">
+              <div>
+                <p class="eyebrow" data-i18n="education.status">ĐANG THEO HỌC</p>
+                <h3 data-i18n="education.school">Trường Đại học Giao thông vận tải Thành phố Hồ Chí Minh (UTH)</h3>
+              </div><span class="education-badge">UTH</span>
+            </div>
+            <div class="education-details">
+              <p><span data-i18n="education.majorLabel">Ngành học</span><strong data-i18n="education.major">Khoa học dữ
+                  liệu</strong></p>
+              <p><span data-i18n="education.levelLabel">Trình độ</span><strong data-i18n="education.level">Đại học · Năm
+                  3</strong></p>
+              <p><span data-i18n="education.stateLabel">Trạng thái</span><strong class="status-text"><i></i><span
+                    data-i18n="education.state">Đang theo học</span></strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel">
+          <div class="contact-copy reveal">
+            <p class="eyebrow" data-i18n="contact.eyebrow">HÃY CÙNG TRÒ CHUYỆN</p>
+            <h2 id="contact-title" data-i18n="contact.title">Kết nối với mình nhé!</h2>
+            <p data-i18n="contact.intro">Mình luôn sẵn sàng trò chuyện, trao đổi ý tưởng và học hỏi những điều mới.</p>
+
+            <div class="social-links" aria-label="Liên kết mạng xã hội">
+              <span class="social-pending">
+                <span class="social-icon" aria-hidden="true">GH</span>
+                <span>GitHub</span>
+                <small>AK98587</small>
+              </span>
+
+              <span class="social-pending">
+                <span class="social-icon" aria-hidden="true">in</span>
+                <span>LinkedIn</span>
+                <small data-i18n="contact.pending">Chưa cập nhật</small>
+              </span>
+
+              <span class="social-pending">
+                <span class="social-icon" aria-hidden="true">@</span>
+                <span>Email</span>
+                <small>gbdbvg510@gmail.com</small>
+              </span>
+
+              <span class="social-pending">
+                <span class="social-icon" aria-hidden="true">f</span>
+                <span>Facebook</span>
+                <small>Quỳnh Nghi</small>
+              </span>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-field"><label for="name" data-i18n="form.name">Họ và tên</label><input id="name"
+                name="name" type="text" autocomplete="name" required aria-describedby="name-error"
+                data-i18n-placeholder="form.namePlaceholder" placeholder="Tên của bạn">
+              <p class="field-error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="form-field"><label for="email" data-i18n="form.email">Email của bạn</label><input id="email"
+                name="email" type="email" autocomplete="email" required aria-describedby="email-error"
+                data-i18n-placeholder="form.emailPlaceholder" placeholder="ban@email.com">
+              <p class="field-error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="form-field"><label for="message" data-i18n="form.message">Lời nhắn</label><textarea id="message"
+                name="message" rows="4" required aria-describedby="message-error"
+                data-i18n-placeholder="form.messagePlaceholder" placeholder="Bạn muốn chia sẻ điều gì?"></textarea>
+              <p class="field-error" id="message-error" aria-live="polite"></p>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="button button-primary submit-button" type="submit"><span data-i18n="form.submit">Soạn
+                email</span><span aria-hidden="true">↗</span></button>
+            <p class="form-disclaimer" data-i18n="form.disclaimer">Form sẽ mở ứng dụng email của bạn; website không gửi
+              hay lưu dữ liệu.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><a class="brand footer-brand" href="#home">Quỳnh Nghi<span>.</span></a>
+        <p data-i18n="footer.tagline">Learning, building, and growing with technology.</p>
+      </div>
+      <p class="copyright"><span data-i18n="footer.copyright">© 2026 Nguyễn Lưu Quỳnh Nghi. All rights
+          reserved.</span><a href="#top" class="back-to-top"><span data-i18n="footer.top">Lên đầu trang</span><span
+            aria-hidden="true">↑</span></a></p>
+    </div>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <button class="dialog-close" type="button" aria-label="Đóng chi tiết dự án"
+        data-i18n-aria="modal.close">×</button>
+
+      <div class="dialog-header">
+        <div class="dialog-meta-top">
+          <span class="project-number" id="dialog-number">PROJECT 01</span>
+          <span class="project-category" id="dialog-category"></span>
+        </div>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-description" id="dialog-description"></p>
+      </div>
+
+      <div class="dialog-body">
+        <div class="dialog-section">
+          <h3 class="dialog-section-title"><span class="section-indicator" aria-hidden="true"></span><span
+              data-i18n="modal.overview">Tổng quan dự án</span></h3>
+          <p class="dialog-text" id="dialog-overview"></p>
+        </div>
+
+        <div class="dialog-section">
+          <h3 class="dialog-section-title"><span class="section-indicator" aria-hidden="true"></span><span
+              data-i18n="modal.problem">Bài toán đặt ra</span></h3>
+          <p class="dialog-text" id="dialog-problem"></p>
+        </div>
+
+        <div class="dialog-columns">
+          <div class="dialog-section">
+            <h3 class="dialog-section-title"><span class="section-indicator" aria-hidden="true"></span><span
+                data-i18n="modal.dataProcessing">Tiền xử lý dữ liệu</span></h3>
+            <ul class="dialog-list" id="dialog-data-processing"></ul>
+          </div>
+          <div class="dialog-section">
+            <h3 class="dialog-section-title"><span class="section-indicator" aria-hidden="true"></span><span
+                data-i18n="modal.methodology">Phương pháp thực hiện</span></h3>
+            <ul class="dialog-list" id="dialog-methodology"></ul>
+          </div>
+        </div>
+
+        <div class="dialog-section">
+          <h3 class="dialog-section-title"><span class="section-indicator" aria-hidden="true"></span><span
+              data-i18n="modal.modelDev">Huấn luyện & Phân tích mô hình</span></h3>
+          <ul class="dialog-list" id="dialog-model-dev"></ul>
+        </div>
+
+        <div class="dialog-section">
+          <h3 class="dialog-section-title"><span class="section-indicator" aria-hidden="true"></span><span
+              data-i18n="modal.results">Kết quả & Nhận định</span></h3>
+          <ul class="dialog-list" id="dialog-results"></ul>
+        </div>
+
+        <div class="dialog-bottom">
+          <div class="dialog-section">
+            <h3 class="dialog-section-title" data-i18n="modal.technologies">Công nghệ</h3>
+            <div class="tag-list" id="dialog-tags"></div>
+          </div>
+          <div class="dialog-section">
+            <h3 class="dialog-section-title" data-i18n="modal.links">Mã nguồn (GitHub)</h3>
+            <div id="dialog-github" class="dialog-github-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+
+</html>
